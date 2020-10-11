@@ -62,8 +62,7 @@ def imprimir():
     100*'━',
     'Código','Descripción','Unidad','Cant','Precio','Subtotal',
     100*'━'
-    ))
-<br>
+    ))<br>
     total = 0
     for item in range(len(boleta)):
         print('''┃{:^10} {:51} {:^8} {:^6} {:8} {:10}┃'''.format(
