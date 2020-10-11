@@ -74,16 +74,14 @@ def imprimir():
         boleta[item][4],
         boleta[item][5]
         ))
-        total += boleta[item][5]
-<br>
+        total += boleta[item][5]<br>
     print('''{}
 {:^79}┃{:^8}:{:10}┃
 {:^79}{}'''.format(
     100*'━',
     '', 'Total', round(total,2),
     '', 21*'━'
-))
-<br>
+))<br>
     getcodigo.set('000001')
     prevprod.set('')
     getcost.set('1')
@@ -120,13 +118,13 @@ def tabla():
     )
     Lista = ttk.Treeview(ventana)
     Lista.place(x = 10, y = 285, width = 700, height = 250)
-    Lista['columns'] = ('Descripcion', 'Unidad', 'Cantidad', 'Precio', 'Subtotal')
+    Lista['columns'] = ('Descripcion', 'Unidad', 'Cantidad', 'Precio', 'Subtotal')<br>
     Lista.column('#0', anchor = CENTER, width = 80, minwidth = 80)
     Lista.column('Descripcion', anchor = W, width = 300, minwidth = 300)
     Lista.column('Unidad', anchor = CENTER, width = 60, minwidth = 60)
     Lista.column('Cantidad', anchor = CENTER, width = 60, minwidth = 60)
     Lista.column('Precio', anchor = CENTER, width = 98, minwidth = 98)
-    Lista.column('Subtotal', anchor = CENTER, width = 98, minwidth = 98)
+    Lista.column('Subtotal', anchor = CENTER, width = 98, minwidth = 98)<br>
     Lista.heading('#0', text = 'Código', anchor = CENTER)
     Lista.heading('Descripcion', text = 'Descripción', anchor = CENTER)
     Lista.heading('Unidad', text = 'Unidad', anchor = CENTER)
