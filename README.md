@@ -122,21 +122,18 @@ def tabla():
     Lista = ttk.Treeview(ventana)
     Lista.place(x = 10, y = 285, width = 700, height = 250)
     Lista['columns'] = ('Descripcion', 'Unidad', 'Cantidad', 'Precio', 'Subtotal')
-    
     Lista.column('#0', anchor = CENTER, width = 80, minwidth = 80)
     Lista.column('Descripcion', anchor = W, width = 300, minwidth = 300)
     Lista.column('Unidad', anchor = CENTER, width = 60, minwidth = 60)
     Lista.column('Cantidad', anchor = CENTER, width = 60, minwidth = 60)
     Lista.column('Precio', anchor = CENTER, width = 98, minwidth = 98)
     Lista.column('Subtotal', anchor = CENTER, width = 98, minwidth = 98)
-
     Lista.heading('#0', text = 'Código', anchor = CENTER)
     Lista.heading('Descripcion', text = 'Descripción', anchor = CENTER)
     Lista.heading('Unidad', text = 'Unidad', anchor = CENTER)
     Lista.heading('Cantidad', text = 'Cantidad', anchor = CENTER)
     Lista.heading('Precio', text = 'Precio', anchor = CENTER)
     Lista.heading('Subtotal', text = 'Subtotal', anchor = CENTER)
-
     for n in range(len(boleta)):
         codigo = boleta[n][0]
         descripcion = boleta[n][1]
