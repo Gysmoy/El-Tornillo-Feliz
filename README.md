@@ -29,8 +29,7 @@ def insertar():
         unidad = productos[codigo][1]
         cantidad = abs(int(getcost.get()))
         precio = productos[codigo][2]
-        subtotal = round(cantidad * precio , 2)
-
+        subtotal = round(cantidad * precio , 2)<br>
         boleta.append([codigo, descripcion, unidad, cantidad, precio, subtotal])
         tabla()
     except:
@@ -64,7 +63,7 @@ def imprimir():
     'Código','Descripción','Unidad','Cant','Precio','Subtotal',
     100*'━'
     ))
-
+<br>
     total = 0
     for item in range(len(boleta)):
         print('''┃{:^10} {:51} {:^8} {:^6} {:8} {:10}┃'''.format(
@@ -76,7 +75,7 @@ def imprimir():
         boleta[item][5]
         ))
         total += boleta[item][5]
-    
+<br>
     print('''{}
 {:^79}┃{:^8}:{:10}┃
 {:^79}{}'''.format(
@@ -84,7 +83,7 @@ def imprimir():
     '', 'Total', round(total,2),
     '', 21*'━'
 ))
-
+<br>
     getcodigo.set('000001')
     prevprod.set('')
     getcost.set('1')
