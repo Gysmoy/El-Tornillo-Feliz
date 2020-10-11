@@ -140,7 +140,7 @@ def tabla():
 
 # Configuración de la Ventana Tk
 ventana = Tk()
-ventana.title('Gysmoy Solution')
+ventana.title('Gysmoy Solution 1.0')
 ventana.geometry('720x600')
 ventana.resizable(width = 0, height = 0)
 ventana.configure(bg = '#18191a')
