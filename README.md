@@ -2,19 +2,26 @@
 Solución del Trabajo del Curso (Algoritmia para la programación del Software)
 
 # Librerías Importadas 
+<p>Se importa las librerías tkinter (para la venatana), datetime (para mostrar la hora y fecha de ejecución de la compra) y os para limpiar la consola cuando se realice una nueva petición<p>
+<pre>
 from tkinter import ttk
 from tkinter import *
 from datetime import date
 from datetime import datetime
 import os
+</pre>
 
-# Declaración de funciones (las cuales serán llamadas con los botones de la venatana)
+# Declaración de funciones
+<p>Primero la de previsualizar, esto hara que cuando se elija un producto por su codigo, se muestre debajo una información general acerca del producto (para ser más específico, se muestra el nombre y el costo en cuanto a la cantidad)</p>
+<pre>
 def previsualizar():
     prevprod.set('')
     prevprod.set(productos[getcodigo.get()][0])
     prevcost.set('')
     prevcost.set('{} {}'.format('S/.', abs( round(float(productos[getcodigo.get()][2]) * int(getcost.get()) , 2) ) ))
-
+</pre>
+<p>La función 'insertar' inserta los datos del prodcuto que se va a comprar dentro de una lista llamada boleta (la cual ha sido declarada como una lista vacía)</p>
+<pre>
 def insertar():
     try:
         codigo = getcodigo.get()
@@ -28,7 +35,7 @@ def insertar():
         tabla()
     except:
         print('¡Hubo un error al insertar datos en la boleta!')
-
+</pre>
 def imprimir():
     os.system ("cls")
     today = date.today()
