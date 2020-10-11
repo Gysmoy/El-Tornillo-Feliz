@@ -1,5 +1,5 @@
 # El Tornillo Feliz
-Solución del Trabajo del Curso <a class='button icon fa-facebook' href='https://facebook.com/'>(Algoritmia para la programación del Software)</a>
+Solución del Trabajo del Curso (Algoritmia para la programación del Software)
 
 # Librerías Importadas 
 <p>Se importa las librerías tkinter (para la venatana), datetime (para mostrar la hora y fecha de ejecución de la compra) y os para limpiar la consola cuando se realice una nueva petición<p>
