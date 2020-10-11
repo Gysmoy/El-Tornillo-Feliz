@@ -2,7 +2,7 @@
 Solución del Trabajo del Curso (Algoritmia para la programación del Software)
 
 # Librerías Importadas 
-<p>Se importa las librerías tkinter (para la venatana), datetime (para mostrar la hora y fecha de ejecución de la compra) y os para limpiar la consola cuando se realice una nueva petición<p>
+<p>Se importa las librerías tkinter (para la ventana), datetime (para mostrar la hora y fecha de ejecución de la compra) y os para limpiar la consola cuando se realice una nueva petición<p>
 <pre>
 from tkinter import ttk
 from tkinter import *
